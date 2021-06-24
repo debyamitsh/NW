@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    @apply lg:max-w-screen-xl max-w-screen-lg lg:px-16 md:px-16 px-6
+    @apply lg:max-w-screen-xl max-w-screen-lg lg:px-16 md:px-16 px-6 m-auto
 }
 
 .nav-link{
@@ -36,4 +36,14 @@ body{
 
 .start-btn{
     @apply py-5 px-8 bg-blue-500 rounded-none shadow-none hover:bg-blue-600 hover:shadow-none text-white focus:bg-blue-700 transition-all duration-300
+}
+
+.facebook{
+    background: #1778f2;
+}
+.facebook:hover{
+    background: #1771e0;
+}
+.facebook:focus{
+    background: #1063c9;
 }

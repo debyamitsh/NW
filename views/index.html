@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="pt-3 pb-2 lg:pb-0 m-auto relative z-50 top-0 left-0 right-0 m-auto w-full transition-all duration-300">
-        <nav class="container m-auto flex lg:flex-nowrap flex-wrap justify-between items-center">
+        <nav class="container flex lg:flex-nowrap flex-wrap justify-between items-center">
             <div class="flex lg:w-min w-full justify-between items-center flex-shrink-0">
                 <div class="lg:-mt-2">
                     <a href="" class="flex gap-3 items-center">
@@ -46,7 +46,7 @@
     </header>
 
     <div class="h-screen w-full relative z-10 lg:-mt-20">
-        <div class="container md:pt-56 pt-24 w-full left-0 right-0 m-auto lg:absolute bottom-40 z-20">
+        <div class="container md:pt-56 pt-24 w-full left-0 right-0 lg:absolute bottom-40 z-20">
             <div class="md:flex justify-between items-end">
                 <div class="lg:w-4/12 md:w-7/12 w-12/12">
                     <div class="md:mb-16 mb-12">
@@ -73,8 +73,49 @@
         </div>
     </div>
     
-    <div class="mt-96">
-        
+    <div class="my-96 w-full hidden">
+        <div class="lg:w-4/12 md:w-7/12 m-auto">
+            <div class="rounded-xl shadow-md px-8 py-12">
+                <h2 class="text-3xl">Connexion</h2>
+                <p class="text-gray-500 mt-4">Se connecter avec :</p>
+                <div class="space-y-8 mt-8">
+                    <div class="md:grid grid-cols-2 gap-3 md:space-y-0 space-y-6">
+                        <button class="relative py-3 space-x-3 flex items-center px-6 w-full rounded border-2 border-gray-200 text-blue-500 hover:border-gray-100 hover:bg-gray-100 focus:bg-gray-200 focus:border-gray-200 transition-all">
+                            <img src="../images/Google.png" class="w-5 inline mr-auto" alt="icône google">
+                            <span class="absolute left-0 right-0 m-auto">Google</span>
+                        </button>
+    
+                        <button class="relative py-3 space-x-3 flex items-center px-6 w-full rounded facebook text-white transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                            <span class="absolute left-0 right-0 m-auto">Facebook</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative h-8 pt-4 my-4">
+                    <hr class="border-t-2 w-full border-gray-100">
+                    <div class="bg-white text-gray-500 px-3 absolute top-1 left-0 right-0 w-max m-auto">Ou</div>
+                </div>
+
+                <form action="" class="mb-12">
+                    <input class="w-full rounded border-2 focus:outline-none focus:border-blue-300 py-3 px-6" placeholder="Téléphone" type="text" name="phone" id="phone">
+                        
+                    <div class="md:flex justify-between mt-3">
+                        <caption>Entrez votre numéro de téléphone</caption>
+                        <button type="submit" class="py-3 px-6 lg:w-4/12 md:w-5/12 w-max rounded bg-blue-500 text-sm hover:bg-blue-600 focus:bg-blue-700 text-white">Se connecter</button>
+                    </div>
+
+                </form>
+
+                <span class="text-gray-500 text-sm">By continue, you agree to our <a href="" class="text-blue-500 hover:text-blue-600">term</a>  and confirm that you have read out <a href="" class="text-blue-500 hover:text-blue-600">privacy policy</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <span class="text-gray-400 text-sm tracking-wider">APROPOS DE NOUS</span>
     </div>
 </body>
 </html>
