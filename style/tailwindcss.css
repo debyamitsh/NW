@@ -32233,6 +32233,7 @@ body{
 }
 
 .container{
+  margin: auto;
   max-width: 1024px;
   padding-left: 1.5rem;
   padding-right: 1.5rem

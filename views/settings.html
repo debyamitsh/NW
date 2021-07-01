@@ -12,19 +12,19 @@
 
     <script src="../javascript/app.js" defer> </script>
 </head>
-<body>
+<body class="bg-white dark:bg-gray-800 overflow-x-hidden">
     <div class="container m-auto">   
-        <nav class="flex gap-16 justify-between items-center sticky top-0 md:pt-5 pt-2 pb-2 bg-white from-white to-transparent z-50">
+
+        <nav class="flex justify-between items-center sticky top-2 md:pt-2 mt-2 -mx-4 px-4 rounded pt-2 pb-2 bg-white dark:bg-gray-700 from-white to-transparent">
             <div class="w-2/12">
                 <a href="" class="flex gap-3 items-center">
                     <img src="../images/app_icone.png" class="w-10" alt="logo">
-                    <span class="lg:inline hidden text-2xl font-medium text-gray-500">Niwapi</span>
+                    <span class="lg:inline hidden text-2xl font-medium text-gray-500 dark:text-white">Niwapi</span>
                 </a>
             </div>
 
             <div class="w-10/12">
                 <div class="flex items-center justify-between gap-4">
-
                     <div class="flex items-center gap-4">
                         <button class="h-10 w-10 rounded-full bg-gray-100 text-gray-700 bg-opacity-0 hover:bg-opacity-100 flex justify-center items-center focus:bg-gray-200 transition-all duration-150">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-7" viewBox="0 0 16 16">
@@ -34,19 +34,19 @@
                         <h4 class="text-xl text-gray-700 font-semibold">Paramètres</h4>
                     </div>
 
-                    <div class="w-11 ml-auto group">
-                        <img src="../images/avatar.jpg" alt="" class="w-11 h-11 border-2 border-white object-cover rounded-full hover:border-blue-200 transition-all duration-300">
-                        <div class="w-max lg:-ml-12 -ml-28 bg-white absolute opacity-0 group-hover:opacity-100 p-5 pb-1 rounded-md shadow-md transition-all duration-300">
-                            <h3 class="text-lg text-gray-800">Méschac Irung</h3>
-                            <ul class="text-gray-500 mt-2 border-t">
+                    <div class="w-11 group">
+                        <img src="../images/avatar.jpg" alt="" class="w-11 h-11 border-2 border-white dark:border-gray-700 object-cover rounded-full hover:border-blue-200 transition-all duration-300">
+                        <div class="z-50 w-max lg:-ml-12 -ml-28 bg-white dark:bg-opacity-700 absolute opacity-0 group-hover:opacity-100 p-5 pb-1 rounded-md shadow-md transition-all duration-300">
+                            <h3 class="text-lg text-gray-800 dark:text-gray-200">Méschac Irung</h3>
+                            <ul class="text-gray-500 dark:text-gray-300 mt-2 border-t">
                                 <li class="-mx-4">
-                                    <a href="settings.html" class="flex items-center gap-4 px-4 py-2 bg-gray-100 rounded-md bg-opacity-0 hover:bg-opacity-100 hover:text-blue-500">
+                                    <a href="settings.html" class="flex items-center gap-4 px-4 py-2 bg-gray-200 dark:bg-blue-100 rounded-md bg-opacity-0 hover:bg-opacity-50 hover:text-blue-500">
                                         <img src="../images/icons/profile/settings.svg" class="w-5" alt="settings icon">
                                         Paramètres
                                     </a>
                                 </li>
                                 <li class="-mx-4">
-                                    <a href="" class="flex items-center gap-4 px-4 py-2 bg-gray-100 rounded-md bg-opacity-0 hover:bg-opacity-100 hover:text-blue-500">
+                                    <a href="" class="flex items-center gap-4 px-4 py-2 bg-gray-100 dark:bg-blue-100 rounded-md bg-opacity-0 hover:bg-opacity-50 hover:text-blue-500">
                                         <img src="../images/icons/profile/log-out.svg" class="w-5" alt="logout icon">
                                         Se deconnecter
                                     </a>
@@ -60,26 +60,26 @@
         </nav>
         
         <div class="lg:flex items-start gap-16 mt-8">
-            <div class="w-2/12 sticky top-56 lg:block hidden">
-                <h2 class="text-sm font-normal uppercase text-gray-400 tracking-widest">Découvrir</h2>
-                <ul class="-ml-4 mt-8 space-y-3 text-gray-600">
-                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 rounded transition-all duration-200">
+            <div class="w-2/12 sticky top-40 lg:block hidden">
+                <h2 class="text-sm font-normal uppercase text-gray-400 dark:text-gray-500 tracking-widest">Découvrir</h2>
+                <ul class="-ml-4 mt-8 space-y-3 text-gray-600 dark:text-gray-300">
+                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
                         <img src="../images/icons/family-chat.svg" class="w-6" alt="">
                         Home
                     </li>
-                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
+                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
                         <img src="../images/icons/categories.svg" class="w-6" alt="">
                         Categories
                     </li>
-                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
+                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
                         <img src="../images/icons/bell.svg" class="w-6" alt="">
                         Annonce
                     </li>
-                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
+                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-0 hover:bg-opacity-50 rounded transition-all duration-200">
                         <img src="../images/icons/promotions.svg" class="w-6" alt="">
                         Promotion
                     </li>
-                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-100 bg-opacity-0 hover:bg-opacity-100 rounded transition-all duration-200">
+                    <li class="cursor-pointer flex gap-4 items-center py-2 px-4 bg-gray-200 dark:bg-blue-100 bg-opacity-50 hover:bg-opacity-75 rounded transition-all duration-200">
                         <img src="../images/icons/event.svg" class="w-6" alt="">
                         Evénements
                     </li>
@@ -91,11 +91,11 @@
             </div>
 
             <div class="lg:w-10/12 ml-auto">
-                <div class="md:p-8 p-6 rounded-lg bg-gradient-to-br from-green-50 to-yellow-50">
+                <div class="md:p-8 p-6 rounded-lg bg-gradient-to-br from-green-50 dark:from-purple-300 dark:to-purple-600 to-yellow-50">
                     <div class="md:flex gap-8 items-center relative">
                         <div class="md:flex items-start gap-8">
                             <div class="md:m-0 m-auto relative flex justify-center items-center group">
-                                <img src="../images/avatar.jpg" class="w-28 h-28 shadow-lg p-2 bg-white rounded-full object-cover" alt="">
+                                <img src="../images/avatar.jpg" class="w-28 h-28 shadow-lg p-2 bg-white dark:bg-purple-400 rounded-full object-cover" alt="">
                                 <button class="group-hover:opacity-100 opacity-0 top-0 right-0 bottom-0 left-0 w-24 h-24 m-auto my-auto backdrop-filter backdrop-blur absolute rounded-full bg-gray-900 bg-opacity-20 transition-all duration-300">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 m-auto text-white" viewBox="0 0 16 16">
                                         <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
@@ -105,13 +105,13 @@
                             </div>
                             
                             <div class="md:w-6/12 md:text-left text-center md:mt-0 mt-6">
-                                <h2 class="text-gray-700 text-xl font-semibold">Vérification de l'identité</h2>
-                                <p class="text-gray-500 mt-3">Confirmez votre identité avec le badge de vérification d'identité.</p>
-                                <button class="mt-4 py-2 px-4 text-sm rounded-md shadow-md bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700 transition-all duration-300 text-white">Obtenir le badge</button>
+                                <h2 class="text-gray-700 dark:text-white text-xl font-semibold">Vérification de l'identité</h2>
+                                <p class="text-gray-500 dark:text-purple-900 mt-3">Confirmez votre identité avec le badge de vérification d'identité.</p>
+                                <button class="mt-4 py-2 px-4 text-sm rounded-md shadow-md bg-indigo-500 dark:bg-gray-900 dark:bg-opacity-10 dark:hover:bg-opacity-20 dark:focus:bg-opacity-40 hover:bg-indigo-600 focus:bg-indigo-700 transition-all duration-300 text-white">Obtenir le badge</button>
                             </div>
                         </div>
 
-                        <div class="24 absolute md:right-8 md:block hidden">
+                        <div class="z-10 absolute md:right-8 md:block hidden">
                             <img src="../images/icons/badge.png" class="w-24" alt="">
                         </div>
                         
@@ -120,13 +120,13 @@
 
                 <div class="bg-white mt-8">
                     <nav class="flex flex-col sm:flex-row">
-                        <button class="text-gray-600 py-3 px-5 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
+                        <button class="text-gray-600 dark:text-gray-300 py-3 px-5 block hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
                             Tab 1
-                        </button><button class="text-gray-600 py-3 px-5 block hover:text-blue-500 focus:outline-none">
+                        </button><button class="text-gray-600 dark:text-gray-300 py-3 px-5 block hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none">
                             Tab 2
-                        </button><button class="text-gray-600 py-3 px-5 block hover:text-blue-500 focus:outline-none">
+                        </button><button class="text-gray-600 dark:text-gray-300 py-3 px-5 block hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none">
                             Tab 3
-                        </button><button class="text-gray-600 py-3 px-5 block hover:text-blue-500 focus:outline-none">
+                        </button><button class="text-gray-600 dark:text-gray-300 py-3 px-5 block hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none">
                             Tab 4
                         </button>
                     </nav>
